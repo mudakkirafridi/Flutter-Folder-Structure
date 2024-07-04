@@ -2,8 +2,8 @@
 /* -- App Image Strings -- */
 
 /// This class contains all the App Images in String formats.
-class TImages {
-
+class AppImages {
+AppImages._();
   // -- App Logos
   static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
   static const String lightAppLogo = "assets/logos/t-store-splash-logo-white.png";

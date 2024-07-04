@@ -1,13 +1,13 @@
 
 /// This class contains all the App Text in String formats.
-class TTexts {
-
+class AppTexts {
+AppTexts._();
   // -- GLOBAL Texts
   static const String and = "and";
   static const String skip = "Skip";
   static const String done = "Done";
   static const String submit = "Submit";
-  static const String appName = "T-Store";
+  static const String appName = "E-Store";
   static const String tContinue = "Continue";
 
 
@@ -64,7 +64,6 @@ class TTexts {
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Taimoor Sikander";
-
 
 }
 
