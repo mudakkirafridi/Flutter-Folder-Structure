@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:professional_e_commerce/features/authentication/screen/onboarding.dart';
 import 'package:professional_e_commerce/utils/constants/text_strings.dart';
 import 'package:professional_e_commerce/utils/theme/theme.dart';
 
@@ -12,16 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
      return GetMaterialApp(
       title: AppTexts.appName,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊', textAlign: TextAlign.center,),
-        ),
-      ),
+      home: const OnboardingScreen() ,
     );
   }
 }
