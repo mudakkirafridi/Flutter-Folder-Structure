@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:professional_e_commerce/features/authentication/controller/onboarding_controller.dart';
-import 'package:professional_e_commerce/features/authentication/widgets/onbaording_widget.dart';
-import 'package:professional_e_commerce/features/authentication/widgets/onboarding_dot_navigation.dart';
-import 'package:professional_e_commerce/features/authentication/widgets/onboarding_next_button.dart';
-import 'package:professional_e_commerce/features/authentication/widgets/onboarding_skip.dart';
+import 'package:professional_e_commerce/features/authentication/controller/onboarding_controller/onboarding_controller.dart';
+import 'package:professional_e_commerce/features/authentication/screen/onboarding_screen/onboarding_widgets/widgets/onbaording_widget.dart';
+import 'package:professional_e_commerce/features/authentication/screen/onboarding_screen/onboarding_widgets/widgets/onboarding_dot_navigation.dart';
+import 'package:professional_e_commerce/features/authentication/screen/onboarding_screen/onboarding_widgets/widgets/onboarding_next_button.dart';
+import 'package:professional_e_commerce/features/authentication/screen/onboarding_screen/onboarding_widgets/widgets/onboarding_skip.dart';
 import 'package:professional_e_commerce/utils/constants/image_strings.dart';
 import 'package:professional_e_commerce/utils/constants/text_strings.dart';
 
