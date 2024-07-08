@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:professional_e_commerce/utils/constants/colors.dart';
-import 'package:professional_e_commerce/utils/constants/text_strings.dart';
 
 class FormDivider extends StatelessWidget {
   const FormDivider({
     super.key,
     required this.dark,
+    required this.text
   });
 
   final bool dark;
+ final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class FormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(AppTexts.orSignUpWith.capitalize! , style: Theme.of(context).textTheme.labelMedium,),
+        Text(text, style: Theme.of(context).textTheme.labelMedium,),
         Flexible(
           child: Divider(
             color: dark ? AppColors.darkGrey : AppColors.grey,

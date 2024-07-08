@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:professional_e_commerce/common/styles/app_spacing_style.dart';
 import 'package:professional_e_commerce/common/widgets/widget_login_sign/form_divider.dart';
 import 'package:professional_e_commerce/common/widgets/widget_login_sign/social_button.dart';
 import 'package:professional_e_commerce/features/authentication/screen/login_screen/widgets/login_form.dart';
 import 'package:professional_e_commerce/features/authentication/screen/login_screen/widgets/login_header.dart';
 import 'package:professional_e_commerce/utils/constants/sizes.dart';
+import 'package:professional_e_commerce/utils/constants/text_strings.dart';
 import 'package:professional_e_commerce/utils/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -25,7 +27,7 @@ class LoginScreen extends StatelessWidget {
              const LoginForm(),
 
               // divider
-              FormDivider(dark: dark),
+              FormDivider(dark: dark , text: AppTexts.orSignInWith.capitalize!,),
 
               // spacing
                 const SizedBox(
