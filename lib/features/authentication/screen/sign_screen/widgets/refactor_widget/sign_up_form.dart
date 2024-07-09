@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:professional_e_commerce/features/authentication/screen/sign_screen/verify_email.dart';
 import 'package:professional_e_commerce/features/authentication/screen/sign_screen/widgets/refactor_widget/term_condition.dart';
 import 'package:professional_e_commerce/utils/constants/sizes.dart';
 import 'package:professional_e_commerce/utils/constants/text_strings.dart';
@@ -43,7 +45,7 @@ class SignUpFormWidget extends StatelessWidget {
         const SizedBox(
           height: AppSizes.spaceBtwInputFields,
         ),
-    
+
         // username
         TextFormField(
           expands: false,
@@ -54,30 +56,28 @@ class SignUpFormWidget extends StatelessWidget {
         const SizedBox(
           height: AppSizes.spaceBtwInputFields,
         ),
-    
+
         // email
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: AppTexts.email,
-              prefixIcon: Icon(Iconsax.direct)),
+              labelText: AppTexts.email, prefixIcon: Icon(Iconsax.direct)),
         ),
         const SizedBox(
           height: AppSizes.spaceBtwInputFields,
         ),
-    
+
         // phone number
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: AppTexts.phoneNo,
-              prefixIcon: Icon(Iconsax.call)),
+              labelText: AppTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
         ),
-    
+
         const SizedBox(
           height: AppSizes.spaceBtwInputFields,
         ),
-    
+
         // password
         TextFormField(
           obscureText: true,
@@ -87,22 +87,22 @@ class SignUpFormWidget extends StatelessWidget {
               prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: Icon(Iconsax.eye_slash)),
         ),
-    
+
         const SizedBox(
           height: AppSizes.spaceBtwInputFields,
         ),
-    
+
         // terms and condition
         TermsAndConditionWidget(dark: dark),
         const SizedBox(
           height: AppSizes.spaceBtwSections,
         ),
-    
+
         // button
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(const VerifyEmailScreen()),
               child: const Text(AppTexts.createAccount)),
         )
       ],
